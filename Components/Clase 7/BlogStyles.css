@@ -1,0 +1,35 @@
+.title{
+    text-align:center;
+    background-color: aqua;
+  }
+.post-card{
+    border: solid 8px aqua ;
+    border-radius: 10px;
+    margin-bottom:2%;
+    padding: 10px;
+    
+  }
+
+.post-title{
+  
+}
+
+.post-body{
+  
+}
+
+.post-writer{
+  
+}
+
+.post-img{
+    width: 200px;
+  }
+
+.like-button{
+  
+}
+
+.unlike-button{
+  
+}

@@ -1,0 +1,10 @@
+.title{
+    text-align:center;
+    background-color: aqua;
+  }
+.postCard{
+    border: solid 8px aqua ;
+    border-radius: 10px;
+    margin-bottom:2%;
+    padding: 10px;
+}
