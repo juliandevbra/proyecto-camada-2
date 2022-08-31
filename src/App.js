@@ -1,34 +1,20 @@
 import { useState } from 'react';
 import './App.css';
-import Header from './Components/Clase 12/Header';
-import SelectPoke from './Components/Clase 12/SelectPoke';
-import pokedex from './pokedex.json'
+import Header from './Components/Clase 13/Header';
+import Shop from './Components/Clase 13/Shop';
+
 
 function App() {
 
-  const [pokeSel, setPokeSel] = useState({
-    id: 0,
-    name: '',
-    type: [
-      ''
-    ],
-    base: {
-      HP: 0,
-      Attack: 0,
-      Defense: 0,
-      SpAttack: 0,
-      SpDefense: 0,
-      Speed: 0
-    }
+  const [total, setTotal] = useState({
+    precio: 0,
+    stock: 0
   })
 
   return (
     <div className="App">
-      <Header pokeSel={pokeSel}/>
-      <SelectPoke 
-        pokedex={pokedex} 
-        setPokeSel={setPokeSel}
-      />
+        <Header total={total}/>
+        <Shop total={total} setTotal={setTotal}/>
     </div>
   );
 }
