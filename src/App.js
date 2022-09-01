@@ -1,20 +1,20 @@
-import { useState } from 'react';
 import './App.css';
-import Header from './Components/Clase 13/Header';
-import Shop from './Components/Clase 13/Shop';
+import { useState } from 'react';
+import ClassDidMount from './Components/Clase 14/ClassDidMount';
+import FuncUseEffect from './Components/Clase 14/FuncUseEffect';
+import UseEffect from './Components/Clase 14/UseEffect';
+
 
 
 function App() {
 
-  const [total, setTotal] = useState({
-    precio: 0,
-    stock: 0
-  })
+  const [show, setShow] = useState(false)
 
-  return (
+   return (
     <div className="App">
-        <Header total={total}/>
-        <Shop total={total} setTotal={setTotal}/>
+      {/* {show ? <ClassDidMount/> : <FuncUseEffect/>}
+      <button onClick={() => setShow(!show)} >Cambiar componente</button> */}
+      <UseEffect/>
     </div>
   );
 }

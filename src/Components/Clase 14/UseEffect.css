@@ -1,0 +1,14 @@
+.boton{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    color: white;
+    font-size: large;
+    box-shadow: 5px 5px 10px black;
+    border: none;
+    border-radius: 50%;
+}
+
+.boton:active{
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
