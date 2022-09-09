@@ -5,8 +5,9 @@ import Navbar from './Navbar'
 const Home = () => {
   return (
     <div>
-        <h1>Home</h1>
+      <section className='header-container'>
         <Navbar/>
+      </section>
         <Outlet/>
     </div>
   )
