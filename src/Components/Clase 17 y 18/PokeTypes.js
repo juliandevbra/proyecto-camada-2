@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
 const PokeTypes = () => {
@@ -6,9 +7,12 @@ const PokeTypes = () => {
   const [types, setTypes] = useState([])
 
   useEffect(() => {
-    fetch(url)
-    .then(res => res.json())
-    .then(data => setTypes(data.results))
+    // fetch(url)
+    // .then(res => res.json())
+    // .then(data => setTypes(data.results))
+    // .catch(err => console.log(err))
+    axios.get(url)
+    .then(res => setTypes(res.data.results))
     .catch(err => console.log(err))
   }, [])
 
