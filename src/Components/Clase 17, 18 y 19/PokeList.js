@@ -20,19 +20,19 @@ const PokeList = ({setLoading}) => {
     }, [])
 
     // Ejemplo con async/await & try/catch
-    // useEffect(() =>{
-    //     try {
-    //         const fetchData = async () => {
-    //             const response = await fetch(url)
-    //             const data = await response.json()
-    //             setList(data.results)
-    //         }
-    //         fetchData()
-    //     }
-    //     catch (err) {
-    //         console.log(err)
-    //     }
-    // }, [])
+    useEffect(() =>{
+        const fetchData = async () => {
+            try {
+                const response = await fetch(url)
+                const data = await response.json()
+                setList(data.results)
+            }
+            catch (err) {
+                console.log(err)
+            }
+        }
+        fetchData()
+    }, [])
 
   return (
     <>

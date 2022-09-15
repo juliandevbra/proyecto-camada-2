@@ -34,18 +34,19 @@ const Pokemon = ({loading, setLoading}) => {
         // })
 
         // Ejemplo con axios, con async/await y con try&catch
-        try {
-          const fetchData = async () => {
+        
+        const fetchData = async () => {
+          try {
             const response = await axios.get(url) 
             setPoke(response.data)
             setTimeout(() => {
               setLoading(false)
             }, 1000)
-          }
-          fetchData()
-        } catch (err) {
+          } catch (err) {
             console.log(err)
+          }
         }
+        fetchData()
 
     }, [url, setLoading])
 
