@@ -1,11 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Home from './Components/Clase 17 y 18/Home';
-import PokeList from './Components/Clase 17 y 18/PokeList';
-import Pokemon from './Components/Clase 17 y 18/Pokemon';
-import PokeTypes from './Components/Clase 17 y 18/PokeTypes';
-import NotFound from './Components/Clase 17 y 18/NotFound'
+import Home from './Components/Clase 17, 18 y 19/Home';
+import PokeList from './Components/Clase 17, 18 y 19/PokeList';
+import Pokemon from './Components/Clase 17, 18 y 19/Pokemon';
+import PokeTypes from './Components/Clase 17, 18 y 19/PokeTypes';
+import NotFound from './Components/Clase 17, 18 y 19/NotFound'
 import { useState } from 'react';
+import UseMemo from './Components/Clase 20/UseMemo';
 
 function App() {
 
