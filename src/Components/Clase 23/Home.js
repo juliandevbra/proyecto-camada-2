@@ -23,7 +23,7 @@ const Home = () => {
             <Lista search={search.value}/>
         </section>
         <section>
-            <PokeList/>
+            {/* <PokeList/> */}
         </section>
     </div>
   )

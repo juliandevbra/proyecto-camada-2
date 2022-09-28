@@ -10,7 +10,7 @@ const useFetch = (url) => {
         axios(url)
         .then(res => setData(res.data))
         .catch(err => console.log(err))
-    }, [])
+    }, [url])
 
   return {data, loading}
 }
