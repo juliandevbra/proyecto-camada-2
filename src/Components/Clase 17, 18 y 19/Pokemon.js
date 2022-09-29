@@ -5,6 +5,7 @@ import Swal from 'sweetalert2'
 import axios from 'axios'
 import { useGlobalStates } from '../Clase 25/Context'
 
+
 const Pokemon = ({loading, setLoading}) => {
 
     const {pokePlantel, setPokePlantel} = useGlobalStates()
